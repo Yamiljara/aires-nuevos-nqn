@@ -1,0 +1,31 @@
+# Site settings
+title: Aires Nuevos NQN
+email: airesnuevosnqn@hotmail.com
+description: La nueva voz de la noticia en Neuquén.
+
+# Base URL para GitHub Pages
+# Deja baseurl vacío si tu sitio se publica en la raíz de un dominio personalizado (ej. tudominio.com)
+# Para GitHub Pages con el nombre de tu repositorio (https://yamiljara.github.io/aires-nuevos-web/),
+# la baseurl DEBE ser el nombre del repositorio, empezando con /
+baseurl: "/aires-nuevos-web"
+url: "https://yamiljara.github.io" # Solo el dominio base
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Plugins de Jekyll
+plugins:
+  - jekyll-feed
+  - jekyll-sass-converter
+
+# Excluir archivos que no quieres que Jekyll procese
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .idea/
+  - .vscode/
+  - node_modules/
+  - .sass-cache/
+  - .jekyll-cache/
+  - vendor/
