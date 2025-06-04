@@ -1,127 +1,305 @@
 ---
 layout: default
-title: Portada - Aires Nuevos NQN
 ---
-<div class="container">
-    <h2 class="section-title">Portada</h2>
+<div class="container main-content-wrapper">
 
-    <main class="main-content" id="portada-section">
-        <section class="featured-article">
-            <h1>El Futuro de la Energía Renovable en Neuquén.</h1>
-            <p>La transición hacia fuentes de energía renovables está ganando terreno en la provincia de Neuquén.
-                Expertos analizan los beneficios y retos de este cambio en la matriz energética.</p>
-            <img src="https://i.postimg.cc/jjVyGhX9/Imagen-de-Whats-App-2025-04-05-a-las-23-27-25-e4c3a7b1.jpg"
-                alt="Noticia principal sobre energía renovable">
-            <div class="additional-news">
-                <div class="additional-article">
-                    <h3>El Impacto de la Tecnología en la Educación en Neuquén</h3>
-                    <p>El avance de las herramientas digitales está transformando el sistema educativo, ofreciendo
-                        nuevas oportunidades para el aprendizaje remoto.</p>
-                </div>
-                <div class="additional-article">
-                    <h3>Reformas en el Sistema de Salud Provincial</h3>
-                    <p>El gobierno de Neuquén está implementando reformas clave en el sistema de salud para mejorar
-                        la atención y la eficiencia en los hospitales.</p>
-                </div>
-                <div class="additional-article">
-                    <h3>Iniciativa de Movilidad Sustentable en Neuquén</h3>
-                    <p>Se lanza un plan para promover el uso de bicicletas y transporte público eléctrico en la
-                        capital.
-                    </p>
-                </div>
-                <div class="additional-article">
-                    <h3>Proyecto de Arte Urbano Ilumina la Ciudad</h3>
-                    <p>Artistas locales colaboran en murales que embellecen espacios públicos y fomentan el turismo
-                        cultural.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="secondary-articles">
-            <div class="secondary-article">
-                <img src="https://i.postimg.cc/FRsT4YWc/noti2.png" alt="Noticia secundaria sobre política">
-                <h3>Nuevo Proyecto de Ley para Fomentar el Empleo Juvenil</h3>
-                <p>El gobierno provincial presentará un proyecto de ley que busca incentivar la contratación de
-                    jóvenes mediante beneficios fiscales para las empresas.</p>
-            </div>
-            <div class="secondary-article">
-                <img src="https://i.postimg.cc/xdgr9nsw/Imagen-de-Whats-App-2025-04-06-a-las-20-40-13-a4e4c14e.jpg"
-                    alt="Noticia secundaria sobre deportes">
-                <h3>Neuquén se Prepara para el Torneo de Rugby Nacional</h3>
-                <p>Equipos de toda Argentina se darán cita en Neuquén para disputar el Torneo Nacional de Rugby
-                    2025. Las expectativas son altas.</p>
-            </div>
-            <div class="secondary-article">
-                <img src="https://i.postimg.cc/jjVyGhX9/Imagen-de-Whats-App-2025-04-05-a-las-23-27-25-e4c3a7b1.jpg"
-                    alt="Imagen de muestra para noticia secundaria 3">
-                <h3>Transformación Digital en la Educación Provincial</h3>
-                <p>El gobierno local está implementando nuevas herramientas digitales para mejorar la educación en
-                    las escuelas de la región, con un enfoque en la inclusión tecnológica.</p>
-            </div>
-        </section>
-    </main>
-</div>
-
-<div class="container">
-    <div class="ad-slot full-width-ad">
-        <p>PUBLICITATE AQUÍ 2996371067 - EMAIL airesnuevosnqn@hotmail.com</p>
-    </div>
-</div>
-
-<div class="container content-section-wrapper">
-    <h2 class="section-title">Últimas Noticias</h2>
-    
-    <div class="ad-slot full-width-ad">
-        <p>PUBLICITATE AQUÍ 2996371067 - EMAIL airesnuevosnqn@hotmail.com</p>
+    <div class="advertising-block-large">
+        <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span><span class="typewriter-cursor"></span>
     </div>
 
-    <section class="latest-news-grid" id="ultimas-noticias-section">
-        <div class="news-item">
-            <img src="https://i.postimg.cc/jjVyGhX9/Imagen-de-Whats-App-2025-04-05-a-las-23-27-25-e4c3a7b1.jpg"
-                alt="Noticia 1">
-            <div class="news-item-content">
-                <h3>Título de la Noticia 1: Innovación Tecnológica</h3>
-                <p>Breve descripción de la noticia. Se enfoca en los avances tecnológicos y su impacto en la vida
-                    diaria.</p>
-            </div>
+    <section class="latest-news-section">
+        <h2 class="section-title">Portada</h2>
+    </section>
+
+    <section class="highlighted-section">
+        {% assign main_post = null %}
+        {% for post in site.posts %}
+            {% if post.categories contains 'Portada' and post.tipo_portada == 'principal' %}
+                {% assign main_post = post %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+
+        {% if main_post %}
+        <div class="main-featured-article-wrapper">
+            <a href="{{ main_post.url | relative_url }}" class="main-featured-article">
+                <img src="{{ main_post.image | relative_url }}" alt="{{ main_post.image_alt }}">
+                <div class="article-info">
+                    <span class="category-tag">Portada</span>
+                    <h2>{{ main_post.title }}</h2>
+                    <p>{{ main_post.copete }}</p>
+                    <span class="article-date">{{ main_post.date | date: "%d de %B de %Y" }}</span>
+                </div>
+            </a>
         </div>
-        <div class="news-item">
-            <img src="https://i.postimg.cc/FRsT4YWc/noti2.png" alt="Noticia 2">
-            <div class="news-item-content">
-                <h3>Título de la Noticia 2: Cultura Local en Auge</h3>
-                <p>Exploramos el florecimiento de las artes y la cultura en la región, con eventos y talentos
-                    emergentes.</p>
-            </div>
+        {% else %}
+        <div class="main-featured-article-wrapper">
+            <p>No se encontró la Noticia Principal. Asegúrate de tener un post con `categories: [Portada]` y `tipo_portada: principal`.</p>
         </div>
-        <div class="news-item">
-            <img src="https://i.postimg.cc/xdgr9nsw/Imagen-de-Whats-App-2025-04-06-a-las-20-40-13-a4e4c14e.jpg"
-                alt="Noticia 3">
-            <div class="news-item-content">
-                <h3>Título de la Noticia 3: Avances en Medicina</h3>
-                <p>Reportaje sobre los últimos descubrimientos y tratamientos médicos que mejoran la calidad de
-                    vida.</p>
-            </div>
-        </div>
-        <div class="news-item">
-            <img src="https://i.postimg.cc/jjVyGhX9/Imagen-de-Whats-App-2025-04-05-a-las-23-27-25-e4c3a7b1.jpg"
-                alt="Noticia 4">
-            <div class="news-item-content">
-                <h3>Título de la Noticia 4: Desarrollo Urbano Sostenible</h3>
-                <p>Análisis de los proyectos de urbanización que buscan un equilibrio entre crecimiento y respeto al
-                    medio ambiente.</p>
-            </div>
-        </div>
-        <div class="news-item">
-            <img src="https://i.postimg.cc/FRsT4YWc/noti2.png" alt="Noticia 5">
-            <div class="news-item-content">
-                <h3>Título de la Noticia 5: Economía Regional</h3>
-                <p>Un vistazo a los factores que impulsan o frenan la economía local, con opiniones de expertos y
-                    emprendedores.</p>
+        {% endif %}
+
+        <div class="secondary-featured-articles-grid-wrapper">
+            <div class="secondary-featured-articles-grid">
+                {% assign temp_secondary_posts = "" | split: "," %}
+                {% for post in site.posts %}
+                    {% if post.categories contains 'Portada' and post.tipo_portada == 'secundaria' %}
+                        {% assign temp_secondary_posts = temp_secondary_posts | push: post %}
+                    {% endif %}
+                    {% if temp_secondary_posts.size >= 2 %}{% break %}{% endif %}
+                {% endfor %}
+                {% assign secondary_posts = temp_secondary_posts %}
+
+                {% for post in secondary_posts %}
+                <a href="{{ post.url | relative_url }}" class="small-article-card">
+                    <img src="{{ post.image | relative_url }}" alt="{{ post.image_alt }}">
+                    <div class="article-content">
+                        <span class="category-tag">Portada</span>
+                        <h3>{{ post.title }}</h3>
+                        <span class="article-date">{{ post.date | date: "%d de %B de %Y" }}</span>
+                    </div>
+                </a>
+                {% endfor %}
+                {% if secondary_posts.size < 2 %}
+                    {% for i in (1..2) %}
+                        {% if forloop.index > secondary_posts.size %}
+                            <a href="#" class="small-article-card placeholder-card">
+                                <img src="/assets/images/placeholder-secondary.jpg" alt="Noticia Secundaria Pendiente">
+                                <div class="article-content">
+                                    <span class="category-tag">Pendiente</span>
+                                    <h3>Noticia Secundaria {{ forloop.index }}</h3>
+                                    <p class="article-copete">Contenido pendiente.</p>
+                                    <span class="article-date">Próximamente</span>
+                                </div>
+                            </a>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
             </div>
         </div>
     </section>
 
-    <div class="ad-slot full-width-ad">
-        <p>PUBLICITATE AQUÍ 2996371067 - EMAIL airesnuevosnqn@hotmail.com</p>
+    <section class="horizontal-news-section">
+        <div class="horizontal-news-grid">
+            {% assign temp_horizontal_posts = "" | split: "," %}
+            {% for post in site.posts %}
+                {% if post.categories contains 'Portada' and post.tipo_portada == 'horizontal' %}
+                    {% assign temp_horizontal_posts = temp_horizontal_posts | push: post %}
+                {% endif %}
+                {% if temp_horizontal_posts.size >= 3 %}{% break %}{% endif %}
+            {% endfor %}
+            {% assign portada_horizontal_posts = temp_horizontal_posts %}
+            
+            {% for post in portada_horizontal_posts %}
+            <a href="{{ post.url | relative_url }}" class="horizontal-news-card">
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.copete }}</p>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    <div class="advertising-block-large">
+        <span class="typewriter-text">Anúnciate aquí: Gran visibilidad para tu negocio.</span><span class="typewriter-cursor"></span>
     </div>
+
+    <div class="advertising-blocks-small">
+        <div class="advertising-block-small">
+            <span class="typewriter-text">Publicidad pequeña.</span><span class="typewriter-cursor"></span>
+        </div>
+        <div class="advertising-block-small">
+            <span class="typewriter-text">Otro anuncio corto.</span><span class="typewriter-cursor"></span>
+        </div>
+        <div class="advertising-block-small">
+            <span class="typewriter-text">Espacio disponible.</span><span class="typewriter-cursor"></span>
+        </div>
+    </div>
+
+    <section class="latest-news-intercalated-section">
+        <h2 class="section-title">Últimas Noticias</h2>
+        <div class="news-and-ads-grid">
+            {% assign latest_posts_to_display = "" | split: "," %}
+            {% for post in site.posts reversed %}
+                {% unless post.categories contains 'Portada' %}
+                    {% assign latest_posts_to_display = latest_posts_to_display | push: post %}
+                {% endunless %}
+            {% endfor %}
+
+            {% assign latest_posts_count = 0 %}
+            {% assign current_post_index = 0 %}
+            {% assign max_items = 12 %}
+
+            {% for i in (1..max_items) %}
+                {% assign item_is_ad = false %}
+                {% if i == 2 or i == 4 or i == 6 or i == 8 or i == 10 or i == 12 %}
+                    {% assign item_is_ad = true %}
+                {% endif %}
+
+                {% if item_is_ad %}
+                    <div class="advertising-block-small-intercalated">
+                        <span class="typewriter-text">AQUÍ 2996371067<br>airesnuevosnqn@hotmail.com</span>
+                    </div>
+                {% else %}
+                    {% assign current_post = latest_posts_to_display[current_post_index] %}
+                    {% if current_post %}
+                        <a href="{{ current_post.url | relative_url }}" class="latest-news-card">
+                            {% if current_post.image %}
+                                <img src="{{ current_post.image | relative_url }}" alt="{{ current_post.image_alt | default: current_post.title }}">
+                            {% else %}
+                                <img src="/assets/images/placeholder-news.jpg" alt="Noticia sin imagen">
+                            {% endif %}
+                            <div class="article-content">
+                                <span class="category-tag">{{ current_post.categories | first }}</span>
+                                <h3>{{ current_post.title }}</h3>
+                                <p class="article-copete">{{ current_post.copete }}</p>
+                                <span class="article-date">{{ current_post.date | date: "%d de %B de %Y" }}</span>
+                            </div>
+                        </a>
+                        {% assign latest_posts_count = latest_posts_count | plus: 1 %}
+                        {% assign current_post_index = current_post_index | plus: 1 %}
+                    {% else %}
+                        <a href="#" class="latest-news-card placeholder-card">
+                            <img src="/assets/images/placeholder-news.jpg" alt="Noticia Pendiente">
+                            <div class="article-content">
+                                <span class="category-tag">Pendiente</span>
+                                <h3>Última Noticia {{ latest_posts_count | plus: 1 }}</h3>
+                                <p class="article-copete">Contenido de la noticia pendiente de carga.</p>
+                                <span class="article-date">Próximamente</span>
+                            </div>
+                        </a>
+                        {% assign latest_posts_count = latest_posts_count | plus: 1 %}
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+
 </div>
+
+<style>
+    /* Estilos para la nueva sección de Últimas Noticias */
+    .latest-news-intercalated-section {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .news-and-ads-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
+        gap: 30px; /* Espacio entre los elementos de la cuadrícula */
+    }
+
+    .latest-news-card {
+        background-color: #ecf0f1;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+    .latest-news-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    .latest-news-card img {
+        width: 100%;
+        height: 180px; /* Altura fija para la imagen de la noticia */
+        object-fit: cover;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .latest-news-card .article-content {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .latest-news-card .category-tag {
+        display: inline-block;
+        background-color: #000;
+        color: #fff;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 0.75em;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .latest-news-card h3 {
+        font-size: 1.1em;
+        margin-top: 0;
+        margin-bottom: 8px;
+        line-height: 1.4;
+        flex-grow: 1;
+    }
+
+    .latest-news-card .article-copete {
+        font-size: 0.9em;
+        color: #555;
+        margin-bottom: 10px;
+        line-height: 1.5;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .latest-news-card .article-date {
+        font-size: 0.85em;
+        color: #777;
+        margin-top: auto;
+    }
+
+    .advertising-block-small-intercalated {
+        background-color: #D0D0D0;
+        border: 2px dashed #bbb;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.75em;
+        color: #000000;
+        padding: 8px;
+        min-height: 60px;
+        box-sizing: border-box;
+        font-weight: bold;
+    }
+
+    /* Media queries para responsividad */
+    @media (max-width: 992px) {
+        .news-and-ads-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .latest-news-card img {
+            height: 160px;
+        }
+        .advertising-block-small-intercalated {
+            min-height: 50px;
+            padding: 6px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .news-and-ads-grid {
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        .latest-news-card img {
+            height: 150px;
+        }
+        .advertising-block-small-intercalated {
+            min-height: 40px;
+            padding: 4px;
+        }
+    }
+</style>

@@ -1,12 +1,12 @@
-current directory: C:/Users/Yamil Jara/OneDrive/Imágenes/Escritorio/Periodico/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
 C:/Ruby34-x64/bin/ruby.exe extconf.rb
 creating Makefile
 
-current directory: C:/Users/Yamil Jara/OneDrive/Imágenes/Escritorio/Periodico/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20250522-14396-mrm30n sitelibdir\=./.gem.20250522-14396-mrm30n clean
+current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20250602-24096-lfta51 sitelibdir\=./.gem.20250602-24096-lfta51 clean
 
-current directory: C:/Users/Yamil Jara/OneDrive/Imágenes/Escritorio/Periodico/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20250522-14396-mrm30n sitelibdir\=./.gem.20250522-14396-mrm30n
+current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20250602-24096-lfta51 sitelibdir\=./.gem.20250602-24096-lfta51
 generating ruby_http_parser-x64-mingw-ucrt.def
 compiling ruby_http_parser.c
 ruby_http_parser.c: In function 'Parser_alloc_by_type':
@@ -163,9 +163,9 @@ C:/Ruby34-x64/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declare
 compiling ryah_http_parser.c
 linking shared-object ruby_http_parser.so
 
-current directory: C:/Users/Yamil Jara/OneDrive/Imágenes/Escritorio/Periodico/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20250522-14396-mrm30n sitelibdir\=./.gem.20250522-14396-mrm30n install
-/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20250522-14396-mrm30n
+current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20250602-24096-lfta51 sitelibdir\=./.gem.20250602-24096-lfta51 install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20250602-24096-lfta51
 
-current directory: C:/Users/Yamil Jara/OneDrive/Imágenes/Escritorio/Periodico/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20250522-14396-mrm30n sitelibdir\=./.gem.20250522-14396-mrm30n clean
+current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20250602-24096-lfta51 sitelibdir\=./.gem.20250602-24096-lfta51 clean

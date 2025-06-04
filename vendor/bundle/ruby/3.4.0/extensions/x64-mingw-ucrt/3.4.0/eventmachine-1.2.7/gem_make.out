@@ -1,12 +1,12 @@
-current directory: C:/Users/Yamil Jara/OneDrive/Imágenes/Escritorio/Periodico/vendor/bundle/ruby/3.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
+current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
 C:/Ruby34-x64/bin/ruby.exe extconf.rb
 creating Makefile
 
-current directory: C:/Users/Yamil Jara/OneDrive/Imágenes/Escritorio/Periodico/vendor/bundle/ruby/3.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
-make DESTDIR\= sitearchdir\=./.gem.20250522-14396-5493zv sitelibdir\=./.gem.20250522-14396-5493zv clean
+current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250602-24096-8qtbf8 sitelibdir\=./.gem.20250602-24096-8qtbf8 clean
 
-current directory: C:/Users/Yamil Jara/OneDrive/Imágenes/Escritorio/Periodico/vendor/bundle/ruby/3.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
-make DESTDIR\= sitearchdir\=./.gem.20250522-14396-5493zv sitelibdir\=./.gem.20250522-14396-5493zv
+current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250602-24096-8qtbf8 sitelibdir\=./.gem.20250602-24096-8qtbf8
 generating fastfilereaderext-x64-mingw-ucrt.def
 compiling mapper.cpp
 compiling rubymain.cpp
@@ -108,9 +108,9 @@ At global scope:
 cc1plus.exe: note: unrecognized command-line option '-Wno-dll-attribute-on-redeclaration' may have been intended to silence earlier diagnostics
 linking shared-object fastfilereaderext.so
 
-current directory: C:/Users/Yamil Jara/OneDrive/Imágenes/Escritorio/Periodico/vendor/bundle/ruby/3.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
-make DESTDIR\= sitearchdir\=./.gem.20250522-14396-5493zv sitelibdir\=./.gem.20250522-14396-5493zv install
-/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20250522-14396-5493zv
+current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250602-24096-8qtbf8 sitelibdir\=./.gem.20250602-24096-8qtbf8 install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20250602-24096-8qtbf8
 
-current directory: C:/Users/Yamil Jara/OneDrive/Imágenes/Escritorio/Periodico/vendor/bundle/ruby/3.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
-make DESTDIR\= sitearchdir\=./.gem.20250522-14396-5493zv sitelibdir\=./.gem.20250522-14396-5493zv clean
+current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250602-24096-8qtbf8 sitelibdir\=./.gem.20250602-24096-8qtbf8 clean

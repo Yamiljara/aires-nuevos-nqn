@@ -1,12 +1,12 @@
-current directory: C:/Users/Yamil Jara/OneDrive/Imágenes/Escritorio/Periodico/vendor/bundle/ruby/3.4.0/gems/commonmarker-0.23.11/ext/commonmarker
+current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/commonmarker-0.23.11/ext/commonmarker
 C:/Ruby34-x64/bin/ruby.exe extconf.rb
 creating Makefile
 
-current directory: C:/Users/Yamil Jara/OneDrive/Imágenes/Escritorio/Periodico/vendor/bundle/ruby/3.4.0/gems/commonmarker-0.23.11/ext/commonmarker
-make DESTDIR\= sitearchdir\=./.gem.20250524-7732-sfe33r sitelibdir\=./.gem.20250524-7732-sfe33r clean
+current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/commonmarker-0.23.11/ext/commonmarker
+make DESTDIR\= sitearchdir\=./.gem.20250602-24096-1rpst6 sitelibdir\=./.gem.20250602-24096-1rpst6 clean
 
-current directory: C:/Users/Yamil Jara/OneDrive/Imágenes/Escritorio/Periodico/vendor/bundle/ruby/3.4.0/gems/commonmarker-0.23.11/ext/commonmarker
-make DESTDIR\= sitearchdir\=./.gem.20250524-7732-sfe33r sitelibdir\=./.gem.20250524-7732-sfe33r
+current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/commonmarker-0.23.11/ext/commonmarker
+make DESTDIR\= sitearchdir\=./.gem.20250602-24096-1rpst6 sitelibdir\=./.gem.20250602-24096-1rpst6
 generating commonmarker-x64-mingw-ucrt.def
 compiling arena.c
 compiling autolink.c
@@ -369,9 +369,9 @@ compiling utf8.c
 compiling xml.c
 linking shared-object commonmarker/commonmarker.so
 
-current directory: C:/Users/Yamil Jara/OneDrive/Imágenes/Escritorio/Periodico/vendor/bundle/ruby/3.4.0/gems/commonmarker-0.23.11/ext/commonmarker
-make DESTDIR\= sitearchdir\=./.gem.20250524-7732-sfe33r sitelibdir\=./.gem.20250524-7732-sfe33r install
-/usr/bin/install -c -m 0755 commonmarker.so ./.gem.20250524-7732-sfe33r/commonmarker
+current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/commonmarker-0.23.11/ext/commonmarker
+make DESTDIR\= sitearchdir\=./.gem.20250602-24096-1rpst6 sitelibdir\=./.gem.20250602-24096-1rpst6 install
+/usr/bin/install -c -m 0755 commonmarker.so ./.gem.20250602-24096-1rpst6/commonmarker
 
-current directory: C:/Users/Yamil Jara/OneDrive/Imágenes/Escritorio/Periodico/vendor/bundle/ruby/3.4.0/gems/commonmarker-0.23.11/ext/commonmarker
-make DESTDIR\= sitearchdir\=./.gem.20250524-7732-sfe33r sitelibdir\=./.gem.20250524-7732-sfe33r clean
+current directory: C:/proyectos_ruby/vendor/bundle/ruby/3.4.0/gems/commonmarker-0.23.11/ext/commonmarker
+make DESTDIR\= sitearchdir\=./.gem.20250602-24096-1rpst6 sitelibdir\=./.gem.20250602-24096-1rpst6 clean
