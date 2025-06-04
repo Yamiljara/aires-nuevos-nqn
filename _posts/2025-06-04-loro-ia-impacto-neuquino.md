@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "El Curioso Fenómeno del 'Loro IA': Un Audio Viral que Desata Risas y Sorpresa en las Mascotas Neuquinas"
-date: 2025-06-04 01:00:00 -0300
+date: 2025-06-04 01:33:00 -0300
 categories: [Ultimas noticias, Nacionales]
 tags: [IA, LoroIA, Mascotas, Neuquén, Viral, RedesSociales, Humor]
 author: Redacción Aires Nuevos NQN
-image: /assets/images/loro-ia-neuquen.jpg # Opcional: Ruta a una imagen destacada del post
+image: /assets/images/loro-ia-neuquen.jpg
+copete: "Un audio generado por IA que simula la voz de un loro se ha vuelto viral, desatando curiosas reacciones en mascotas y generando humor en redes sociales como TikTok e Instagram." # Asegúrate de que esta línea esté presente
 ---
 
 **Viral Global con Impacto Local**
