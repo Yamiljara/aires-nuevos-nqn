@@ -9,10 +9,10 @@
    ========================================================================== */
 :root {
     /* Colores */
-    --primary-red: #000000; /* Un rojo más vibrante para acentos y hover */
+    --primary-red: #0c0000; /* Un rojo más vibrante para acentos y hover */
     --dark-blue: #000000; /* Negro para texto principal y fondos oscuros */
     --light-gray: #ecf0f1; /* Fondo muy claro para el body y ahora para las tarjetas de noticias */
-    --medium-gray: #bbbbbb; /* Gris Medio (bordes, separadores) - Ligeramente más claro que el anterior */
+    --medium-gray: #000000; /* Gris Medio (bordes, separadores) - Ligeramente más claro que el anterior */
     --white: #ffffff; /* Blanco puro, usado para el header y menú móvil */
     --black: #000000;
     --ad-background-gray: #D0D0D0; /* Gris claro metálico/plateado para publicidad - Color UNIFORME */
@@ -47,7 +47,7 @@ body {
     color: var(--dark-blue);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    padding-top: 170px; /* Base para desktop: Ajusta si el header fijo es más alto */
+    padding-top: 180px; /* Base para desktop: Ajusta si el header fijo es más alto */
 }
 
 .site-wrapper {
@@ -962,11 +962,11 @@ img {
 
 
 .post-body a {
-    color: #007bff;
+    color: #000000;
     text-decoration: underline;
 }
 .post-body a:hover {
-    color: #0056b3;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -1026,7 +1026,7 @@ img {
 
 .related-posts-list li a {
     text-decoration: none;
-    color: #007bff;
+    color: #000000;
     font-size: 1.1em;
     display: block;
     padding: 8px 0;
@@ -1038,7 +1038,7 @@ img {
 }
 
 .related-posts-list li a:hover {
-    color: #0056b3;
+    color: #000000;
     text-decoration: none;
 }
 

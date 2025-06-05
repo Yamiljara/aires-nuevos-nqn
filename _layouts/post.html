@@ -23,7 +23,6 @@ layout: default
             {% if page.image_caption %}<span class="post-featured-image-caption">{{ page.image_caption }}</span>{% endif
             %}
         </div>
-
         {% endif %}
 
         {% if page.copete %}
@@ -35,14 +34,34 @@ layout: default
         </div>
 
         <div class="advertising-block-large single-post-ad">
-            <span class="typewriter-text">PUBLICITA AQUÍ 2996371067<br>AIRESNUEVOSNQN@HOTMAIL.COM</span>
+            PUBLICITA AQUÍ 2996371067<br>
+            AIRESNUEVOSNQN@HOTMAIL.COM
+        </div>
+
+        <div class="advertising-block-large single-post-ad">
+            PUBLICITA AQUÍ 2996371067<br>
+            AIRESNUEVOSNQN@HOTMAIL.COM
+        </div>
+
+        <div class="advertising-block-large single-post-ad">
+            PUBLICITA AQUÍ 2996371067<br>
+            AIRESNUEVOSNQN@HOTMAIL.COM
         </div>
 
         <div class="related-news-section">
             <h3 class="section-subtitle">Noticias Relacionadas</h3>
             {% assign current_post_categories = page.categories %}
-            {% assign related_posts = site.posts | where_exp:"post", "post.url != page.url" | where_exp:"post",
-            "post.categories contains current_post_categories[0]" | sample: 3 %}
+
+            {% comment %}
+            Solo filtra por categoría si el post actual tiene al menos una categoría.
+            Esto previene el error 'no implicit conversion of nil into String'.
+            {% endcomment %}
+            {% assign filtered_posts = site.posts | where_exp:"post", "post.url != page.url" %}
+            {% if current_post_categories.size > 0 %}
+                {% assign related_posts = filtered_posts | where_exp:"post", "post.categories contains current_post_categories[0]" | sample: 3 %}
+            {% else %}
+                {% assign related_posts = filtered_posts | sample: 3 %}
+            {% endif %}
 
             {% if related_posts.size > 0 %}
             <ul class="related-posts-list">
